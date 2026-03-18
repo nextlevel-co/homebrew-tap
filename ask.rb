@@ -5,21 +5,21 @@
 class Ask < Formula
   desc "CLI package manager for AI agent skills"
   homepage "https://github.com/nextlevel-co/ask"
-  version "0.1.0"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nextlevel-co/ask/releases/download/v0.1.0/ask_0.1.0_darwin_amd64.tar.gz"
-      sha256 "b403e6d443a8d48f346a8f0f0ea0e3b613e4a13bd6ccbc6aeeba8ba0867db7e5"
+      url "https://github.com/nextlevel-co/ask-releases/releases/download/v0.1.4/ask_0.1.4_darwin_amd64.tar.gz"
+      sha256 "ac85f9c2e00b898f0e299a2f2567b250302786dd379dfe195ecd4396404f5075"
 
       define_method(:install) do
         bin.install "ask"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nextlevel-co/ask/releases/download/v0.1.0/ask_0.1.0_darwin_arm64.tar.gz"
-      sha256 "0d9f608b3c43d386662e38684acf74ebec4914512f7a982262de14dea5a3cc13"
+      url "https://github.com/nextlevel-co/ask-releases/releases/download/v0.1.4/ask_0.1.4_darwin_arm64.tar.gz"
+      sha256 "2ce8a13010cae99e2b7a70749cbe3f6b41836a93141dba220fe0f278a111f7d9"
 
       define_method(:install) do
         bin.install "ask"
@@ -29,15 +29,15 @@ class Ask < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nextlevel-co/ask/releases/download/v0.1.0/ask_0.1.0_linux_amd64.tar.gz"
-      sha256 "d483e2deafcd6b88197098b8ac8bb4af720beb8e78d81d911f5c30c1c9a4baec"
+      url "https://github.com/nextlevel-co/ask-releases/releases/download/v0.1.4/ask_0.1.4_linux_amd64.tar.gz"
+      sha256 "8c376ec468c1a9e291f1442d2fcea9dc31f62a1a20fa3a81606f5d90a21e4096"
       define_method(:install) do
         bin.install "ask"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nextlevel-co/ask/releases/download/v0.1.0/ask_0.1.0_linux_arm64.tar.gz"
-      sha256 "11122558645982719943f8d5cc7b6415b013cafae3f7fe9cd6ed8df75cedbb43"
+      url "https://github.com/nextlevel-co/ask-releases/releases/download/v0.1.4/ask_0.1.4_linux_arm64.tar.gz"
+      sha256 "5cc316e7fd53c553b5188e9af7ae28340c680660527595ba2a8b379c2b9f1468"
       define_method(:install) do
         bin.install "ask"
       end
