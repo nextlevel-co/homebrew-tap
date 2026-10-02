@@ -4,11 +4,11 @@ cask "remote-agent" do
 
   url "https://github.com/nextlevel-co/remote-agent-releases/releases/download/v#{version}/RemoteAgent-#{version}.zip"
   name "NL Remote"
-  desc "Agent that shares this Mac's screen and accepts approved remote control"
+  desc "Agent that shares the screen and accepts approved remote control"
   homepage "https://github.com/nextlevel-co/remote-agent-releases"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "NL Remote.app"
 
