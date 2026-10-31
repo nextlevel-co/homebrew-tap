@@ -1,6 +1,6 @@
 cask "cti-lantern" do
-  version "0.2.0"
-  sha256 "3caecfd50536f2f2b0b524c324dbf8a188b01ae353e12038235b3bb941510f7c"
+  version "0.3.0"
+  sha256 "f5c0b2adbc264369671258ccf9c117791d7221a7ef0ba0b35449bbeb5f0b90cf"
 
   url "https://github.com/nextlevel-co/cti-lantern-releases/releases/download/v#{version}/CTILantern-#{version}.zip"
   name "CTI Lantern"
@@ -14,4 +14,6 @@ cask "cti-lantern" do
 
   uninstall launchctl: "biz.next-level.lantern.agent.helper",
             quit:      "biz.next-level.lantern.agent"
+
+  zap trash: "~/Library/Application Support/biz.next-level.lantern.agent"
 end
