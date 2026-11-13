@@ -1,6 +1,6 @@
 cask "remote-agent" do
-  version "0.5.0"
-  sha256 "a2961883a799a9d92dd5055c9506f672f329a44c4032507f3001382661793da4"
+  version "0.6.0"
+  sha256 "47ba4b54d16f83d1f5868cddc66bef98f2a0dd92575668f7ee733d44c50d7385"
 
   url "https://github.com/nextlevel-co/remote-agent-releases/releases/download/v#{version}/RemoteAgent-#{version}.zip"
   name "Remote Agent"
