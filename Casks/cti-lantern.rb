@@ -1,6 +1,6 @@
 cask "cti-lantern" do
-  version "0.5.4"
-  sha256 "c511bbef4e59353e3bae067457613537dd21be7a503dedd3ce14c877030c7175"
+  version "0.5.5"
+  sha256 "a83babe5399ef4555585f6b972c2347c04c000263f275d24723ee449352dcb87"
 
   url "https://github.com/nextlevel-co/cti-lantern-releases/releases/download/v#{version}/CTILantern-#{version}.zip"
   name "CTI Lantern"
